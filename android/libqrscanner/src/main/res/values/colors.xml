@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#336699</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#E94643</color>
+
+    <color name="common_bg">#FAFAFA</color>
+
+    <!-- 主题色的通用按钮-->
+    <color name="btn_theme_common_n">@color/colorAccent</color>
+    <color name="btn_theme_common_p">#CCE94643</color>
+
+<!--文字颜色-->
+    <color name="txt_deep_1">#000000</color>
+
+</resources>

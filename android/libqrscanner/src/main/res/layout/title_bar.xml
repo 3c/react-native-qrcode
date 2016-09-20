@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@android:color/black"
+                android:layout_height="@dimen/title_bar_height">
+
+    <ImageView
+            android:scaleType="centerInside"
+            android:src="@drawable/title_bar_back"
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/title_bar_height"
+            android:layout_height="@dimen/title_bar_height"/>
+
+    <TextView
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:text="二维码/条码"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>

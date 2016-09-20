@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <me.dm7.barcodescanner.zbar.ZBarScannerView
+            android:id="@+id/zbar_scanner_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></me.dm7.barcodescanner.zbar.ZBarScannerView>
+
+    <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            layout="@layout/title_bar"></include>
+</RelativeLayout>
