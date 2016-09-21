@@ -24,6 +24,8 @@ public class ScannerActivity extends FragmentActivity implements ZBarScannerView
 
     public static final String TAG = "ScannerActivity";
 
+    String result="";
+
     @Override
     public void onCreate(Bundle state) {
         super.onCreate(state);
@@ -58,12 +60,20 @@ public class ScannerActivity extends FragmentActivity implements ZBarScannerView
         Log.v(TAG, rawResult.getContents()); // Prints scan results
         Log.v(TAG, rawResult.getBarcodeFormat().getName()); // Prints the scan format (qrcode, pdf417 etc.)
 
-        //结果赋值
-        Constans.sArrayBlockingQueue.add(rawResult.getContents());
+        result=rawResult.getContents();
+
         finish();
 
         // If you would like to resume scanning, call this method below:
 //        mScannerView.resumeCameraPreview(this);
+    }
+
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //结果赋值
+        Constans.sArrayBlockingQueue.add(result);
     }
 
     @Override
